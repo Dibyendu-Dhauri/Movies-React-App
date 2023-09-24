@@ -1,14 +1,15 @@
 import { fetchFromAPI } from "../utils/fetchData";
 import { genres } from "../utils/genre";
 import { useEffect, useState } from "react";
-import { MdLocalMovies } from "react-icons/Md";
+// import { MdLocalMovies } from "react-icons/md";
+import {TbMovie} from 'react-icons/tb'
 import { RxAvatar } from "react-icons/rx";
 import { useNavigate } from "react-router";
 import Loading from "./Loading";
 
 export default function PageUtils(item) {
   const [upComingMovie, setUpComingMovie] = useState([]);
-  const [getAllDetails, setGetAllDetails] = useState([]);
+  const [getAllDetails, setGetAllDetails] = useState([]); 
   const [pageCount, setPageCount] = useState(1);
   const navigate = useNavigate();
 
@@ -61,7 +62,7 @@ export default function PageUtils(item) {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-700">
                       <span aria-hidden="true" className="absolute inset-0" />
-                      <MdLocalMovies /> { movie.title ? ( movie.title.slice(0, 17)) : ("")}
+                      <TbMovie /> { movie.title ? ( movie.title.slice(0, 17)) : ("")}
                     </h3>
                     <p className="mt-1 text-md text-gray-700">
                       {movie.release_date ? (movie.release_date) : ("")}

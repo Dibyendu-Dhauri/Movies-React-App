@@ -1,6 +1,7 @@
 import { fetchFromAPI } from "../utils/fetchData";
 import { useEffect, useState } from "react";
-import { MdLocalMovies } from "react-icons/Md";
+// import { MdLocalMovies } from "react-icons/md";
+import {TbMovie} from 'react-icons/tb'
 
 import { useNavigate } from "react-router";
 import { RxAvatar } from "react-icons/rx";
@@ -79,7 +80,7 @@ export default function HomeUtils(item) {
                     <div>
                       <h3 className="text-lg font-semibold text-gray-700">
                         <span aria-hidden="true" className="absolute inset-0" />
-                        <MdLocalMovies /> {movie.title.slice(0, 17)}
+                        <TbMovie /> {movie.title.slice(0, 17)}
                       </h3>
                       <p className="mt-1 text-md text-gray-700">
                         {movie.release_date}
