@@ -3,7 +3,7 @@ import { options } from "../utils/fetchData";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { RxAvatar } from "react-icons/rx";
-import { MdLocalMovies } from "react-icons/Md";
+import {TbMovie} from 'react-icons/tb'
 import { genres } from "../utils/genre";
 import Loading from "./Loading";
 
@@ -58,7 +58,7 @@ export default function SearchMovies() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-700">
                     <span aria-hidden="true" className="absolute inset-0" />
-                    <MdLocalMovies /> {movie.title.slice(0, 17)}
+                    <TbMovie /> {movie.title.slice(0, 17)}
                   </h3>
                   <p className="mt-1 text-md text-gray-700">
                     {movie.release_date}

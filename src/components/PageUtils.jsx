@@ -1,7 +1,7 @@
 import { fetchFromAPI } from "../utils/fetchData";
 import { genres } from "../utils/genre";
 import { useEffect, useState } from "react";
-// import { MdLocalMovies } from "react-icons/md";
+
 import {TbMovie} from 'react-icons/tb'
 import { RxAvatar } from "react-icons/rx";
 import { useNavigate } from "react-router";

@@ -1,6 +1,5 @@
 import { fetchFromAPI } from "../utils/fetchData";
 import { useEffect, useState } from "react";
-// import { MdLocalMovies } from "react-icons/md";
 import {TbMovie} from 'react-icons/tb'
 
 import { useNavigate } from "react-router";
